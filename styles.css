@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    background-image: url('images/wood-texture.jpg'); /* Wood texture background */
+    background-size: cover; /* Scale background to cover entire page */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed; /* Fix background in place while scrolling */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    color: #333; /* General text color */
+}
+
+/* ---------- Header Styles ---------- */
+
+#main-header {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Vertically center contents */
+    justify-content: center; /* Center all items horizontally */
+    gap: 40px; /* Space between logo/title and nav */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    padding: 10px 40px; /* Add spacing inside the header */
+    border-bottom: 4px solid #964B00; /* Brown border to mimic wood edge */
+}
+
+#main-header img {
+    height: 80px; /* Set fixed height for logo */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+#main-header h1 {
+    font-size: 2rem; /* Set font size for site title */
+    margin: 0; /* Remove default margin */
+    color: #4B2E1E; /* Deep brown color matching wood theme */
+    display: inline-block; /* Prevent line break */
+}
+
+/* Prevent logo and title from shrinking */
+#main-header > img,
+#main-header > h1 {
+    flex-shrink: 0; /* Keep size constant, don't shrink */
+}
+
+/* ---------- Navigation ---------- */
+
+.nav-menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Layout nav items in a row */
+    gap: 20px; /* Add spacing between nav items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make nav text bold */
+    color: #4B2E1E; /* Deep brown color */
+    padding: 8px 12px; /* Add space inside links */
+    border-radius: 5px; /* Slightly round link corners */
+    transition: background-color 0.3s; /* Smooth background transition on hover */
+}
+
+.nav-menu li a:hover {
+    background-color: #F5DEB3; /* Light wheat color on hover */
+}
+
+/* ---------- Footer ---------- */
+
+#main-footer {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent footer background */
+    text-align: center; /* Center all footer text */
+    padding: 20px; /* Add space inside footer */
+    font-size: 0.9rem; /* Slightly smaller font */
+    margin-top: 40px; /* Space above footer */
+    border-top: 4px solid #964B00; /* Brown top border to match header */
+}
+
+.social-links {
+    list-style: none; /* Remove bullets from social links */
+    padding: 0; /* Remove padding */
+    margin: 10px 0 0 0; /* Add top margin only */
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center the links horizontally */
+    gap: 15px; /* Space between icons */
+}
+
+.social-links li a {
+    color: #4B2E1E; /* Deep brown text color */
+    font-weight: bold; /* Make link text bold */
+    text-decoration: none; /* Remove underline */
+}
+
+/* ---------- Main Content Sections ---------- */
+
+main {
+    background-color: rgba(255, 255, 255, 0.92); /* White background for readability */
+    margin: 20px auto; /* Center main and add vertical spacing */
+    padding: 20px; /* Padding inside content box */
+    max-width: 1000px; /* Limit content width for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* ---------- Home Page ---------- */
+
+.intro h2 {
+    color: #4B2E1E; /* Deep brown section header */
+    font-size: 1.6rem; /* Match other h2 sizing */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.main-text {
+    font-size: 1.1rem; /* Increase base text size slightly */
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+
+.content {
+    display: flex; /* Arrange image and text side-by-side */
+    align-items: flex-start; /* Align to top */
+    gap: 20px; /* Space between image and text */
+    margin: 40px 0; /* Vertical spacing around block */
+}
+
+.content img {
+    width: 45%; /* Image takes up less than half the width */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 10px; /* Rounded image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to image */
+}
+
+.main-text {
+    flex: 1; /* Text fills remaining space */
+    font-size: 1.1rem; /* Consistent with other text */
+    line-height: 1.6; /* Readable line spacing */
+    color: #333; /* Standard text color */
+}
+
+/* ---------- Basics Page Sections ---------- */
+
+.rules-section h2,
+.bowling-form-section h3,
+.equipment-info h3 {
+    color: #4B2E1E; /* Unified section header color */
+    margin-top: 0; /* Remove top spacing */
+}
+
+.rules-list {
+    padding-left: 20px; /* Indent list from left */
+    line-height: 1.6; /* Increase line spacing */
+}
+
+.equipment-section {
+    display: flex; /* Flex layout for equipment area */
+    gap: 20px; /* Space between info and links */
+    flex-direction: column; /* Stack info and links vertically */
+}
+
+.equipment-info, .equipment-links {
+    flex: 1; /* Let each section grow equally */
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+
+.websites-list {
+    list-style: none; /* Remove bullets from list */
+    padding-left: 0; /* Align with container edge */
+}
+
+.websites-list li {
+    margin-bottom: 20px; /* Space between each list item */
+}
+
+/* ---------- Contact Page ---------- */
+
+.contact-intro h2 {
+    font-size: 1.6rem; /* Consistent section title size */
+    color: #4B2E1E; /* Deep brown for theme match */
+}
+
+.contact-form {
+    margin-top: 20px; /* Space above the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form rows */
+}
+
+label {
+    display: inline-block; /* Align label with input */
+    width: 120px; /* Fixed label width */
+    font-weight: bold; /* Emphasize label text */
+    margin-right: 10px; /* Space between label and input */
+    text-align: right; /* Right-align label text */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%; /* Make inputs wide */
+    padding: 8px; /* Padding inside inputs */
+    border: 1px solid #aaa; /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1rem; /* Standard font size */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+.submit-button {
+    margin-top: 10px; /* Space above button */
+    padding: 10px 20px; /* Padding inside button */
+    background-color: #964B00; /* Brown button background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 6px; /* Rounded button corners */
+    font-size: 1rem; /* Standard button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.submit-button:hover {
+    background-color: #7B3F00; /* Darker brown on hover */
+}

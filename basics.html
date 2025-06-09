@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ben's Bowling Basics - Basics</title>
+    <title>Ben's Bowling Basics - Home</title>
     <meta charset="utf-8">
-<!--  
-    <link rel="" href=""> This will be added later when we make stylesheet 
--->  
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+    <header id="main-header">
         <img src="images/logo-transparent-png.png" alt="Ben's Bowling Basics Logo" style="height: 100px;">
         <h1>Ben's Bowling Basics</h1>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="basics.html">Basics</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,10 +19,10 @@
         </nav>
     </header>
     
-    <main>
-        <div>
+    <main id="basics-main">
+        <section class="rules-section">
             <h2>10 Common Rules Every Bowler Should Know</h2>
-            <ol>
+            <ol class="rules-list">
                 <li>A game consists of 10 frames – In each frame, a player gets up to two chances to knock down all 10 pins.</li>
                 <li>A strike earns bonus points – If you knock down all 10 pins on the first roll of a frame, you get 10 points plus the total of your next two rolls.</li>
                 <li>A spare also earns a bonus – If you knock down all 10 pins in two rolls (a spare), you earn 10 points plus the score of your next roll.</li>
@@ -36,8 +34,8 @@
                 <li>No re-throws unless there's interference – A ball that gets stuck or affected by outside interference may be re-thrown, but not if it simply ends up in the gutter.</li>
                 <li>Respect lane courtesy – Always let the bowler on your right go first if you’re both ready to bowl at the same time. This keeps the game flowing and respectful.</li>   
             </ol>
-        </div>
-        <div>
+        </section>
+        <section class="bowling-form-section">
             <h3>Common Form When Bowling</h3>
             <img src="images/4-step-approach.jpg" alt="4 step approach diagram">
             <p>
@@ -46,9 +44,9 @@
                 <strong>Step 3: Slide</strong> – As your arm swings down, slide your front foot forward with balance.<br>
                 <strong>Step 4: Release</strong> – Release the ball at the bottom of the arc while following through with your throwing arm. Maintain a fluid motion and smooth follow-through.
             </p>
-        </div>
-        <div>
-            <div>
+        </section>
+        <section class="equipment-section">
+            <div class="equipment-info">
                 <h3>The Importance Of Equipment</h3>
                 <p>
                     Having your own bowling equipment is important because it improves comfort, consistency, and performance. 
@@ -57,9 +55,9 @@
                     Overall, using your own gear helps build confidence and develop your technique more effectively.
                 </p>
             </div>
-            <div>
+            <div class="equipment-links">
                 <h4>Websites to buy eqipment:</h4>
-                <ul>
+                <ul class="websites-list">
                     <li>
                         <a href="https://www.bowlerx.com">BowlerX</a><br>
                         <p>Known for great prices and a wide selection of balls, bags, shoes, and accessories.</p>
@@ -79,11 +77,11 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="main-footer">
         <p>Contact us at:</p>
         <p>Email: bensbowlingbasics@gmail.com</p>
         <p>Phone: 803-509-5310</p>
-        <ul>
+        <ul class="social-links">
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">YouTube</a></li>
