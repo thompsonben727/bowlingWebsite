@@ -219,3 +219,27 @@ textarea {
 .submit-button:hover {
     background-color: #7B3F00; /* Darker brown on hover */
 }
+
+/* ---------- Contact Form Validation Styling ---------- */
+
+/* Highlight error fields with a red border */
+input:invalid,
+textarea:invalid {
+    border: 2px solid #dc3545;
+    background-color: #fff5f5;
+}
+
+/* Optional: Style for valid inputs */
+input:valid,
+textarea:valid {
+    border: 2px solid #28a745;
+    background-color: #f0fff4;
+}
+
+/* Error message appearance (if using custom error elements later) */
+.error-message {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+}
